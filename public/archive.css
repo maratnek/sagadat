@@ -1,0 +1,101 @@
+/*Archive*/
+#archive {
+  padding: 2em 1em 1em;
+}
+
+#archive ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#archive li {
+  margin-bottom: 1em;
+  background-color: #986965;
+}
+
+#archive .card ul.gallery {
+  display: none
+}
+
+#archive .card ul.gallery {
+  position: relative;
+}
+#archive .card ul.gallery li {
+  position: absolute;
+}
+
+
+#archive .view {
+  /*cursor: pointer;*/
+}
+#archive .view  {
+  position: relative;
+  left: 0;
+}
+#archive .view i {
+  position: absolute;
+  opacity: 0.5;
+  right: 20px;
+  top: 10px;
+}
+
+#archive .card {
+  position: relative;
+}
+#archive .card input[type="checkbox"]{
+  /*opacity: 0;*/
+  z-index: 1;
+}
+#archive .card label{
+	margin: 0;
+  padding: 0;
+  /*position: absolute;*/
+  display: block;
+	cursor: pointer;
+	z-index: 2;
+  color: red;
+}
+#archive .card input[type=checkbox]:checked ul.gallery {
+  display: block;
+}
+
+#archive .card input[type=checkbox]:checked:after ul.gallery {
+  display: block;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 10;
+  background: red;
+}
+/*#archive .card:active ul.gallery, #archive .card:hover ul.gallery {
+  display: block;
+}*/
+/*#archive .card:active .view, #archive .card:hover .view{
+  display: none;
+}*/
+
+/*#archive*/
+
+@media only screen and (min-width:700px) {
+  #archive .grid {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(auto,25em)) 1fr;
+  }
+
+  #archive ul {
+    grid-column: 2/4;
+  }
+
+  #archive ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  #archive li {
+    width: 30%;
+  }
+
+}

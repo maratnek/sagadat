@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- update the version number as needed -->
+  <script defer src="/__/firebase/4.6.2/firebase-app.js"></script>
+  <!-- include only the Firebase features as you need -->
+  <script defer src="/__/firebase/4.6.2/firebase-auth.js"></script>
+  <script defer src="/__/firebase/4.6.2/firebase-database.js"></script>
+  <script defer src="/__/firebase/4.6.2/firebase-messaging.js"></script>
+  <script defer src="/__/firebase/4.6.2/firebase-storage.js"></script>
+
+  <script defer src="/__/firebase/init.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Сагадат</title>
+</head>
+<body>
+  <nav class="nav">
+    <div class="logo">
+      <img id="icon" src="/img/sagadat.svg" alt="">
+    </div>
+
+		<label for="toggle-1" class="nav-btn">
+			<span></span>
+			<span></span>
+			<span></span>
+		</label>
+
+		<input type="checkbox" id="toggle-1">
+
+		<ul class="menu">
+      <li><a href="index.html" class="active">Главная</a></li>
+      <li><a href="meeting.html" class="">Знакомства</a></li>
+      <li><a href="archive.html" class="">Архив</a></li>
+      <li><a href="participate.html" class="">Записаться</a></li>
+		</ul>
+  </nav>
+  <!-- <br> -->
+  <!-- Header Showcase -->
+  <header id="showcase" class="grid">
+    <div class="bg-image"></div>
+    <div class="content-wrap">
+      <h1>Сагадат <br><span>молодежно-нравственное движение</span></h1>
+      <h2 class="arab-main">بسم الله الرحمن الرحيم </h2>
+      <!-- <a href="#section-a" class="btn">Узнать более</a> -->
+      <span class="arrow-down">
+        <i class="fa fa-angle-double-down fa-2x"></i>
+      </span>
+    </div>
+  </header>
+  <!-- Main Area -->
+  <main id="main">
+    <section class="registration">
+      <h2>Заполнить анкету и принять участие</h2>
+      <div class="container">
+      <div class="wrapper animated bounceInLeft">
+        <div class="company-info">
+          <h3>Сагадат</h3>
+          <div class="brand">
+            <div class="logo">
+              <img id="icon" src="/img/sagadat.svg" alt="">
+            </div>
+          </div>
+          <ul>
+            <!-- <li><i class="fa fa-road"></i> ул. Татарстан 12</li> -->
+            <li><i class="fa fa-phone"></i> 8 (927) 463-24-96</li>
+            <li><i class="fa fa-envelope"></i> syagadat@syagadat.com</li>
+          </ul>
+        </div>
+        <div class="contact">
+          <h3>Записаться</h3>
+          <div class="alert">Ваше сообщение отправлено</div>
+          <form action="index.js" id="contactForm">
+            <p>
+              <label for="name">Имя</label>
+              <input type="text" name="name" value="" id="name" required>
+            </p>
+            <p>
+              <label for="male">Пол</label>
+              <input type="radio" name="male" value="M" id="maleM" checked>М
+              <input type="radio" name="male" value="W" id="maleW">Ж
+            </p>
+            <p>
+              <label for="age">Возраст</label>
+              <input type="number" name="age" value="" min=18 max=50 id="age" required>
+            </p>
+            <p>
+              <label for="tel">Телефон</label>
+              <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="tel" value="" id="tel" placeholder="777-777-7777">
+            </p>
+            <p>
+              <label for="email">Почта</label>
+              <input type="email" name="email" value="" id="email">
+            </p>
+            <p class="full">
+              <label for="message">Пожелания</label>
+              <textarea name="message" rows="5" id="message"></textarea>
+            </p>
+            <p class="full">
+              <button type="submit" name="button">
+                <i class="fa fa-paper-plane"></i>  Отправить
+              </button>
+            </p>
+          </form>
+        </div>
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="main-footer" class="grid">
+    <div>Сагадат - центр создания семьи</div>
+    <div>Проект создан <a href="http://designzm.com" target="_blank">DesignZM</a></div>
+  </footer>
+
+
+  <!-- <script src="https://www.gstatic.com/firebasejs/4.7.0/firebase.js"></script> -->
+  <script async type="text/javascript" src="main.js"></script>
+
+  <!-- initialize the SDK after all desired features are loaded -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110489866-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-110489866-1');
+  </script>
+
+</body>
+</html>

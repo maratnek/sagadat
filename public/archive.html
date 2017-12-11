@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <!-- update the version number as needed -->
+  <script defer src="/__/firebase/4.6.2/firebase-app.js"></script>
+  <!-- include only the Firebase features as you need -->
+  <script defer src="/__/firebase/4.6.2/firebase-auth.js"></script>
+  <script defer src="/__/firebase/4.6.2/firebase-database.js"></script>
+  <script defer src="/__/firebase/4.6.2/firebase-messaging.js"></script>
+  <script defer src="/__/firebase/4.6.2/firebase-storage.js"></script>
+
+  <script defer src="/__/firebase/init.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="archive.css">
+
+  <title>Сагадат</title>
+</head>
+<body>
+  <nav class="nav">
+    <div class="logo">
+      <img id="icon" src="/img/sagadat.svg" alt="">
+    </div>
+
+		<label for="toggle-1" class="nav-btn">
+			<span></span>
+			<span></span>
+			<span></span>
+		</label>
+
+		<input type="checkbox" id="toggle-1">
+
+		<ul class="menu">
+      <li><a href="index.html" class="active">Главная</a></li>
+      <li><a href="meeting.html" class="">Знакомства</a></li>
+      <li><a href="archive.html" class="">Архив</a></li>
+      <li><a href="participate.html" class="">Записаться</a></li>
+		</ul>
+  </nav>
+  <!-- <br> -->
+  <!-- Header Showcase -->
+  <header id="showcase" class="grid">
+    <div class="bg-image"></div>
+    <div class="content-wrap">
+      <h1>Сагадат <br><span>молодежно-нравственное движение</span></h1>
+      <h2 class="arab-main">بسم الله الرحمن الرحيم </h2>
+      <!-- <a href="#section-a" class="btn">Узнать более</a> -->
+      <span class="arrow-down">
+        <i class="fa fa-angle-double-down fa-2x"></i>
+      </span>
+    </div>
+  </header>
+  <!-- Main Area -->
+  <main id="main">
+    <h2>Моменты ваших участий</h2>
+    <section id="archive" class="grid">
+      <ul class="menu">
+        <li>
+          <div class="card">
+            <label for="view">
+              <div class="view">
+                <i class="fa fa-eye fa-3x"></i>
+                <img src="/img/tugan_av_place/place_meeting.jpg" alt="туган авылым">
+              </div>
+            </label>
+            <input type="checkbox" name="view" value="">
+            <div class="card-content">
+              <h3 class="card-title">Туган авылым</h3>
+            </div>
+            <ul class="gallery">
+              <li>
+                <img src="/img/tugan_av_place/tugan_av_people.jpg" alt="участники">
+                <!-- <div class="card-content">
+                  <h3 class="card-title">Участники</h3>
+                </div> -->
+              </li>
+              <li>
+                <img src="/img/tugan_av_place/tugan_av_man.jpg" alt="мальчики">
+                <!-- <div class="card-content">
+                  <h3 class="card-title">Мальчики</h3>
+                </div> -->
+              </li>
+              <li>
+                <img src="/img/tugan_av_place/tugan_av_girl3.jpg" alt="девочки">
+                <!-- <div class="card-content">
+                  <h3 class="card-title"></h3>
+                </div> -->
+              </li>
+              <li>
+                <img src="/img/tugan_av_place/tugan_av_game6.jpg" alt="игра">
+                <!-- <div class="card-content">
+                  <h3 class="card-title"></h3>
+                </div> -->
+              </li>
+              <li>
+                <img src="/img/tugan_av_place/tugan_av_game5.jpg" alt="игра">
+                <!-- <div class="card-content">
+                  <h3 class="card-title"></h3>
+                </div> -->
+              </li>
+              <li>
+                <img src="/img/tugan_av_place/tugan_av_game7.jpg" alt="игра">
+                <!-- <div class="card-content">
+                  <h3 class="card-title"></h3>
+                </div> -->
+              </li>
+              <li>
+                <img src="/img/tugan_av_place/tugan_av_girl.jpg" alt="девочки">
+                <!-- <div class="card-content">
+                  <h3 class="card-title"></h3>
+                </div> -->
+              </li>
+              <li>
+                <img src="/img/tugan_av_place/tugan_av_man4.jpg" alt="мальчики">
+                <!-- <div class="card-content">
+                  <h3 class="card-title"></h3>
+                </div> -->
+              </li>
+              <li>
+                <img src="/img/tugan_av_place/tugan_av_place.jpg" alt="место встречи">
+                <!-- <div class="card-content">
+                  <h3 class="card-title"></h3>
+                </div> -->
+              </li>
+              <li>
+                <img src="/img/tugan_av_place/tugan_av_superman.jpg" alt="организатор">
+                <!-- <div class="card-content">
+                  <h3 class="card-title"></h3>
+                </div> -->
+              </li>
+              <li>
+                <img src="/img/tugan_av_place/tugan_av_table2.jpg" alt="стол">
+                <!-- <div class="card-content">
+                  <h3 class="card-title"></h3>
+                </div> -->
+              </li>
+              <li>
+                <img src="/img/tugan_av_place/tugan_av_uch2.jpg" alt="победители">
+                <!-- <div class="card-content">
+                  <h3 class="card-title"></h3>
+                </div> -->
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="card">
+            <div class="view">
+              <i class="fa fa-eye fa-3x"></i>
+              <img src="/img/family_place/place_meeting2.jpg" alt="семья">
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Семья</h3>
+            </div>
+            <ul class="gallery">
+              <li>
+                <img src="/img/family_place/man_game5.jpg" alt="участники">
+              </li>
+              <li>
+                <img src="/img/family_place/tables2.jpg" alt="столы">
+              </li>
+              <li>
+                <img src="/img/family_place/food.jpg" alt="столы">
+              </li>
+              <li>
+                <img src="/img/family_place/filling.jpg" alt="заполнение анкет">
+              </li>
+              <li>
+                <img src="/img/family_place/filling3.jpg" alt="заполнение анкет">
+              </li>
+              <li>
+                <img src="/img/family_place/form.jpg" alt="анкеты">
+              </li>
+              <li>
+                <img src="/img/family_place/game1.jpg" alt="игры">
+              </li>
+              <li>
+                <img src="/img/family_place/game2.jpg" alt="игры">
+              </li>
+              <li>
+                <img src="/img/family_place/game3.jpg" alt="игры">
+              </li>
+              <li>
+                <img src="/img/family_place/groups.jpg" alt="группа">
+              </li>
+              <li>
+                <img src="/img/family_place/lozung.jpg" alt="организатор">
+              </li>
+              <li>
+                <img src="/img/family_place/singer.jpg" alt="певец">
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="card">
+            <div class="view">
+              <i class="fa fa-eye fa-3x"></i>
+              <img src="/img/training_man/kuran.jpg" alt="коран">
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Тренинг</h3>
+            </div>
+            <ul class="gallery">
+              <li><img src="/img/training_man/training_man1.jpg" alt="тренинг для мужчин"></li>
+              <li><img src="/img/training_man/training_man2.jpg" alt="тренинг для мужчин"></li>
+              <li><img src="/img/training_man/training_man3.jpg" alt="тренинг для мужчин"></li>
+              <li><img src="/img/training_man/training_man4.jpg" alt="тренинг для мужчин"></li>
+              <li><img src="/img/training_man/training_man5.jpg" alt="тренинг для мужчин"></li>
+              <li><img src="/img/training_man/training_man6.jpg" alt="тренинг для мужчин"></li>
+              <li><img src="/img/training_man/training_man7.jpg" alt="тренинг для мужчин"></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="main-footer" class="grid">
+    <div>Сагадат - центр создания семьи</div>
+    <div>Проект создан <a href="http://designzm.com" target="_blank">DesignZM</a></div>
+  </footer>
+
+
+  <script async type="text/javascript" src="archive.js"></script>
+
+  <!-- initialize the SDK after all desired features are loaded -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110489866-1"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-110489866-1');
+</script>
+
+</body>
+</html>
