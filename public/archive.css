@@ -14,71 +14,71 @@
   background-color: #986965;
 }
 
-#archive .card ul.gallery {
-  display: none
-}
-
-#archive .card ul.gallery {
+#archive ul.menu > li {
   position: relative;
 }
-#archive .card ul.gallery li {
-  position: absolute;
+
+#archive .card ul.gallery li{
+  display: none;
 }
 
+#archive .card ul.gallery li:nth-child(1) {
+  display: block;
+}
 
-#archive .view {
-  /*cursor: pointer;*/
-}
-#archive .view  {
-  position: relative;
-  left: 0;
-}
 #archive .view i {
   position: absolute;
-  opacity: 0.5;
+  /*opacity: 0.5;*/
   right: 20px;
   top: 10px;
+  transition: 0.3s;
+}
+#archive .view i.fa-external-link {
+  opacity: 0;
 }
 
-#archive .card {
-  position: relative;
-}
 #archive .card input[type="checkbox"]{
-  /*opacity: 0;*/
-  z-index: 1;
+  display: none;
 }
+
 #archive .card label{
 	margin: 0;
   padding: 0;
-  /*position: absolute;*/
   display: block;
 	cursor: pointer;
 	z-index: 2;
-  color: red;
 }
-#archive .card input[type=checkbox]:checked ul.gallery {
+
+#archive .card ul.gallery{
+  display: none;
+}
+
+#archive .card input[type=checkbox]:checked ~ ul.gallery {
   display: block;
 }
 
-#archive .card input[type=checkbox]:checked:after ul.gallery {
-  display: block;
+#archive .card input[type=checkbox]:checked ~ label .view img{
+  display: none;
+}
+
+#archive .card input[type=checkbox]:checked ~ label .view i.fa-eye{
+  transition: 0.3s;
+  opacity: 0;
+}
+#archive .card input[type=checkbox]:checked ~ label .view i.fa-external-link{
+  transition: 0.3s;
+  opacity: 1;
+}
+
+#archive .card input[type=checkbox]:checked:after {
+  display: none;
   content: '';
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
-  position: absolute;
-  z-index: 10;
-  background: red;
+  position: inherit;
 }
-/*#archive .card:active ul.gallery, #archive .card:hover ul.gallery {
-  display: block;
-}*/
-/*#archive .card:active .view, #archive .card:hover .view{
-  display: none;
-}*/
-
-/*#archive*/
 
 @media only screen and (min-width:700px) {
   #archive .grid {
@@ -86,15 +86,15 @@
     grid-template-columns: 1fr repeat(2, minmax(auto,25em)) 1fr;
   }
 
-  #archive ul {
+  #archive ul.menu {
     grid-column: 2/4;
   }
 
-  #archive ul {
+  #archive ul.menu {
     display: flex;
     justify-content: space-around;
   }
-  #archive li {
+  #archive ul.menu > li {
     width: 30%;
   }
 
