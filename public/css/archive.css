@@ -1,0 +1,85 @@
+/*Archive*/
+#archive {
+  padding: 2em 1em 1em; }
+  #archive ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    #archive ul li {
+      margin-bottom: 1em;
+      background-color: #986965; }
+  #archive ul.menu > li {
+    position: relative; }
+  #archive .card1 ul.gallery li, #archive .card2 ul.gallery li, #archive .card3 ul.gallery li {
+    display: none; }
+    #archive .card1 ul.gallery li:nth-child(1), #archive .card2 ul.gallery li:nth-child(1), #archive .card3 ul.gallery li:nth-child(1) {
+      display: block; }
+  #archive .card1 .view i, #archive .card2 .view i, #archive .card3 .view i {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    transition: 0.3s; }
+    #archive .card1 .view i.fa-external-link, #archive .card2 .view i.fa-external-link, #archive .card3 .view i.fa-external-link {
+      opacity: 0; }
+  #archive .card1 input[type="checkbox"], #archive .card2 input[type="checkbox"], #archive .card3 input[type="checkbox"] {
+    display: none; }
+  #archive .card1 label, #archive .card2 label, #archive .card3 label {
+    margin: 0;
+    padding: 0;
+    display: block;
+    cursor: pointer;
+    z-index: 2; }
+  #archive .card1 ul.gallery, #archive .card2 ul.gallery, #archive .card3 ul.gallery {
+    display: none; }
+    #archive .card1 ul.gallery:first-child, #archive .card2 ul.gallery:first-child, #archive .card3 ul.gallery:first-child {
+      display: none; }
+  #archive .card1 input[type=checkbox]:checked ~ ul.gallery, #archive .card2 input[type=checkbox]:checked ~ ul.gallery, #archive .card3 input[type=checkbox]:checked ~ ul.gallery {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background: #cc9da5c9;
+    left: 0;
+    z-index: 1; }
+    #archive .card1 input[type=checkbox]:checked ~ ul.gallery li, #archive .card2 input[type=checkbox]:checked ~ ul.gallery li, #archive .card3 input[type=checkbox]:checked ~ ul.gallery li {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      z-index: 1; }
+      #archive .card1 input[type=checkbox]:checked ~ ul.gallery li img, #archive .card2 input[type=checkbox]:checked ~ ul.gallery li img, #archive .card3 input[type=checkbox]:checked ~ ul.gallery li img {
+        width: 100vw; }
+  #archive .card1 input[type=checkbox]:checked ~ label .view img, #archive .card2 input[type=checkbox]:checked ~ label .view img, #archive .card3 input[type=checkbox]:checked ~ label .view img {
+    display: none; }
+  #archive .card1 input[type=checkbox]:checked ~ label .view i.fa-eye, #archive .card2 input[type=checkbox]:checked ~ label .view i.fa-eye, #archive .card3 input[type=checkbox]:checked ~ label .view i.fa-eye {
+    transition: 0.3s;
+    opacity: 0; }
+  #archive .card1 input[type=checkbox]:checked ~ label .view i.fa-external-link, #archive .card2 input[type=checkbox]:checked ~ label .view i.fa-external-link, #archive .card3 input[type=checkbox]:checked ~ label .view i.fa-external-link {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 10px 20px;
+    transform: translateX(-50%) rotate(-90deg);
+    z-index: 2;
+    transition: 0.3s, transform 0.5s;
+    opacity: 1; }
+  #archive .card1 input[type=checkbox]:checked:after, #archive .card2 input[type=checkbox]:checked:after, #archive .card3 input[type=checkbox]:checked:after {
+    display: none;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: inherit; }
+  @media only screen and (min-width: 700px) {
+    #archive .grid {
+      display: grid;
+      grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr; }
+    #archive ul.menu {
+      grid-column: 2/4; }
+    #archive ul.menu {
+      display: flex;
+      justify-content: space-around; }
+    #archive ul.menu > li {
+      width: 30%; } }
