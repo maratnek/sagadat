@@ -1,4 +1,4 @@
-console.log('hellow')
+console.log('archive')
 let limenu = document.querySelectorAll("ul.menu > li");
 
 limenu.forEach((li)=>{
@@ -8,3 +8,9 @@ limenu.forEach((li)=>{
   });
 
 });
+
+// Carousel for the events
+ // $(document).ready(function(){
+ //      $('.carousel').carousel();
+ //    });
+$('.carousel.carousel-slider').carousel({fullWidth: true, indicators:true});
